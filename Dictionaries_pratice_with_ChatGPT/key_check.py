@@ -3,7 +3,7 @@ product = {
     "price": 1500,
     "brand": "Lenovo"
 }
-if "discount"not in product:
+if "discount" not in product:
     product["discount"] = 10
 
 price = product["price"]
