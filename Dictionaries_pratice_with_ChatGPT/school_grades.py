@@ -11,8 +11,10 @@ for name, grades in students.items():
         grade = students["Ivan"].values()
         avg_grade = sum(grade) / len(students["Ivan"])
         print(avg_grade)
+
 highest_math_score = float("-inf")
 name_of_student = ""
+
 for name, grade in students.items():
     if grade["math"] > highest_math_score:
         highest_math_score = grade["math"]
