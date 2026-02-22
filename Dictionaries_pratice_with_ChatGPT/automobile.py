@@ -6,3 +6,5 @@ car = {
 }
 print(car.get("model"))
 car["color"] = "silver"
+for key, value in car.items():
+    print(key, "->", value)
