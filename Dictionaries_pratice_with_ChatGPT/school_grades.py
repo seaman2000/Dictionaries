@@ -5,6 +5,7 @@ students = {
 }
 
 for name, grades in students.items():
+
     if name == "Maria":
         print(students["Maria"])
     elif name == "Ivan":
