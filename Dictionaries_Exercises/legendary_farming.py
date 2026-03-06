@@ -1,29 +1,35 @@
 legendary_resources = {
-    "Shards": 0,
-    "Fragments": 0,
-    "Motes": 0
+    "shards": 0,
+    "fragments": 0,
+    "motes": 0
 }
+
 legendary_is_obtained = False
-while True:
-    quantity = int(input())
-    material = input()
-    legendary_resources[material] = legendary_resources.get(material, 0)
-    legendary_resources[material] += quantity
+while not legendary_is_obtained:
+    items = input().split()
 
-    if legendary_resources["Shards"] >= 250:
-        print("Shadowmourne obtained!")
-        legendary_resources["Shards"] -= 250
-        legendary_is_obtained = True
-    elif legendary_resources["Fragments"] >= 250:
-        print("Valanyr obtained!")
-        legendary_resources["Fragments"] -= 250
-        legendary_is_obtained = True
-    elif legendary_resources["Motes"] >= 250:
-        print("Dragonwrath obtained!")
-        legendary_resources["Motes"] -= 250
-        legendary_is_obtained = True
+    for item in range(0, len(items), 2):
+        quantity = int(items[item])
+        material = items[item + 1].lower()
 
-    if legendary_is_obtained:
-        break
+        legendary_resources[material] = legendary_resources.get(material, 0)
+        legendary_resources[material] += quantity
 
-for resource, quantity in
+        if legendary_resources["shards"] >= 250:
+            print("Shadowmourne obtained!")
+            legendary_resources["shards"] -= 250
+            legendary_is_obtained = True
+        elif legendary_resources["fragments"] >= 250:
+            print("Valanyr obtained!")
+            legendary_resources["fragments"] -= 250
+            legendary_is_obtained = True
+        elif legendary_resources["motes"] >= 250:
+            print("Dragonwrath obtained!")
+            legendary_resources["motes"] -= 250
+            legendary_is_obtained = True
+
+        if legendary_is_obtained:
+            break
+
+for resource, quantity in legendary_resources.items():
+    print(f"{resource} : {quantity}")
