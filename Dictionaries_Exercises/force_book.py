@@ -20,5 +20,12 @@ while True:
 
     elif "->" in input_line:
         user, side = input_line.split(" -> ")
+        for users in force_book.values():
+            if user in users:
+                users.remove(user)
+                break
+        force_book.setdefault(side, []).append(user)
+        
+        print(f"{user} joins the {side} side!")
 
 print(force_book)
