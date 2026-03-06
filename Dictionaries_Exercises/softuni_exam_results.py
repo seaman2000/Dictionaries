@@ -5,8 +5,8 @@ while True:
         break
     name, language, points = submission.split("-")
     points = int(points)
-    exam_results[name] = {language: 0}
-    if points > exam_results[name][language]:
+    exam_results.setdefault(name, {})
+    if points > exam_results[name].get(language, 0):
         exam_results[name][language] = points
 
 print(exam_results)
