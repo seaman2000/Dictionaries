@@ -16,7 +16,6 @@ while True:
         points = int(points)
         exam_results.setdefault(name, 0)
         submissions[language] = submissions.get(language, 0) + 1
-
         exam_results[name] = max(points, exam_results.get(name, 0))
 
 print("Results:")
