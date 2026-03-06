@@ -22,7 +22,8 @@ while True:
         print("Dragonwrath obtained!")
         legendary_resources["Motes"] -= 250
         legendary_is_obtained = True
-        
+
     if legendary_is_obtained:
         break
 
+for resource, quantity in
