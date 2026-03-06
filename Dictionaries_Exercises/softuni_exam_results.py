@@ -17,13 +17,11 @@ while True:
         exam_results.setdefault(name, 0)
         submissions[language] = submissions.get(language, 0) + 1
 
-        if points > exam_results[name].get(language, 0):
-            exam_results[name] = points
+        exam_results[name] = max(points, exam_results.get(name, 0))
 
 print("Results:")
 for username, points in exam_results.items():
-    for language, value in points.items():
-        print(f"{username} | {value}")
+    print(f"{username} | {points}")
 
 print("Submissions:")
 for language, count in submissions.items():
