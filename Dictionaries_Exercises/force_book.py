@@ -34,3 +34,4 @@ for force, users in force_book.items():
         print(f"Side: {force}, Members: {len(users)}")
         for user in users:
             print(f"! {user}")
+            
