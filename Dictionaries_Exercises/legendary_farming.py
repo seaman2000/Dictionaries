@@ -5,15 +5,15 @@ legendary_resources = {
 }
 
 legendary_is_obtained = False
+
 while not legendary_is_obtained:
     items = input().split()
 
-    for item in range(0, len(items), 2):
-        quantity = int(items[item])
-        material = items[item + 1].lower()
+    for idx in range(0, len(items), 2):
+        quantity = int(items[idx])
+        material = items[idx + 1].lower()
 
-        legendary_resources[material] = legendary_resources.get(material, 0)
-        legendary_resources[material] += quantity
+        legendary_resources[material] = legendary_resources.get(material, 0) + quantity
 
         if legendary_resources["shards"] >= 250:
             print("Shadowmourne obtained!")
@@ -32,4 +32,4 @@ while not legendary_is_obtained:
             break
 
 for resource, quantity in legendary_resources.items():
-    print(f"{resource} : {quantity}")
+    print(f"{resource}: {quantity}")
