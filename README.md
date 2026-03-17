@@ -43,7 +43,4 @@ They focus on:
 - Writing optimized and clean code
 - Combining multiple programming concepts
 
-These problems are ideal for deepening your understanding and pushing your skills further.
-
-
 
