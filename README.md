@@ -1,4 +1,4 @@
-# Python Fundamentals – Dictionaries
+# 🐍 Python Fundamentals – Dictionaries
 
 This section contains tasks and exercises focused on **Dictionaries** in Python.
 
