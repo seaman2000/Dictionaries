@@ -6,18 +6,5 @@ Dictionaries are one of the most powerful built-in data structures. They store d
 
 ## Topics Covered
 
-### Lab
-The **Lab** tasks introduce the basics of dictionaries.
 
-Topics include:
-- Creating dictionaries
-- Accessing values by key
-- Adding and updating elements
-- Iterating through keys, values, and items
-
-Example:
-```python
-data = {"name": "Gosho", "age": 25}
-
-print(data["name"])
 
