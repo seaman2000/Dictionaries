@@ -34,8 +34,8 @@ These tasks simulate real-world scenarios and improve problem-solving skills.
 
 ---
 
-### Bonus Exercise
-The **Bonus Exercise** tasks are optional but more challenging.
+### Bonus Exercises
+The **Bonus Exercises** are optional but more challenging.
 
 They focus on:
 - Complex data structures
